@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/KristinaTar/event_calendar.git/static/css/main.1d6ccd9c.css",
-    "main.js": "/KristinaTar/event_calendar.git/static/js/main.b553c3ec.js",
-    "index.html": "/KristinaTar/event_calendar.git/index.html",
-    "main.1d6ccd9c.css.map": "/KristinaTar/event_calendar.git/static/css/main.1d6ccd9c.css.map",
-    "main.b553c3ec.js.map": "/KristinaTar/event_calendar.git/static/js/main.b553c3ec.js.map"
+    "main.css": "/event_calendar/static/css/main.1d6ccd9c.css",
+    "main.js": "/event_calendar/static/js/main.b553c3ec.js",
+    "index.html": "/event_calendar/index.html",
+    "main.1d6ccd9c.css.map": "/event_calendar/static/css/main.1d6ccd9c.css.map",
+    "main.b553c3ec.js.map": "/event_calendar/static/js/main.b553c3ec.js.map"
   },
   "entrypoints": [
     "static/css/main.1d6ccd9c.css",
