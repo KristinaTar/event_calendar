@@ -1,5 +1,3 @@
-
-
 export enum AppointmentStatusCode {
   Pending = 'P',
   CheckedIn = 'CI',

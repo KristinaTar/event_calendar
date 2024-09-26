@@ -15,9 +15,9 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { HexColorPicker } from 'react-colorful';
 
-import './calendarForm.css';
 import { Appointment } from '../../types';
 import { validationSchema } from "../../helpers/validationScheme";
+import './calendarForm.css';
 
 
 
