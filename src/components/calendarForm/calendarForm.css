@@ -3,6 +3,12 @@
   color: #676565;
   padding: 10px;
   font-size: 12px;
+  text-transform: uppercase;
+}
+
+.rbc-toolbar-label {
+  color: black;
+  font-weight: bold;
 }
 
 .rbc-row-content {
@@ -72,6 +78,37 @@
   z-index: 5;
 }
 
+
+.form-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid #d0d0d0;
+  box-shadow: 5px 5px #e1d9d9;
+  width: 100%;
+  min-width: 400px;
+}
+
 .custom-datepicker:hover {
   color: #4396a9;
 }
+
+
+.react-colorful__pointer {
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer;
+}
+
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+

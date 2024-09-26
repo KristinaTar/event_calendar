@@ -9,7 +9,7 @@ import {
   Input,
   Text,
 } from '@chakra-ui/react';
-import { CloseIcon } from '@chakra-ui/icons';
+import { CloseIcon, TimeIcon } from '@chakra-ui/icons';
 import { Field, Form, Formik, FieldProps } from 'formik';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -49,7 +49,7 @@ export default function CalendarForm({
       ...appointment,
       start: new Date(appointment.start),
       end: new Date(appointment.end),
-      color: appointment.color || '#ffffff',
+      color: appointment.color || '#c0bcbc',
     }),
     [appointment],
   );
@@ -61,7 +61,7 @@ export default function CalendarForm({
   };
 
   return (
-    <Box boxShadow={'2xl'} padding="5" rounded="xl" bg="white" width="100%">
+    <Box className="form-container">
       <Formik
         initialValues={initialValues}
         onSubmit={async values => {
@@ -113,21 +113,21 @@ export default function CalendarForm({
             <Field name="color">
               {({ field }: FieldProps<string>) => (
                 <FormControl isInvalid={!!errors.color && touched.color}>
-                  <FormLabel>Color</FormLabel>
+                  <FormLabel>Choose event color</FormLabel>
                   <Box>
                     <HexColorPicker
-                      color={field.value || '#ffffff'}
+                      color={field.value || '#c0bcbc'}
                       onChange={color => setFieldValue('color', color)}
-                      className="custom-colorpicker"
+                      style={{ width: '300px', padding: '10px',  height: '150px'}}
                     />
                   </Box>
-                  <Box mt={2}>
-                    <Text>Selected Color:</Text>
+                    <Box className="text-wrapper">
+                    <Text>Selected color event:</Text>
                     <Box
-                      width="35px"
-                      height="35px"
+                      width="25px"
+                      height="25px"
                       bg={field.value || '#ffffff'}
-                      borderRadius="md"
+                      borderRadius="25px"
                       border="1px solid #ccc"
                     />
                   </Box>
@@ -140,7 +140,7 @@ export default function CalendarForm({
             <Flex gap={4} mt={4} display={'flex'} flexDirection={'column'}>
               <Flex flexBasis={'50%'}>
                 <FormControl isInvalid={!!errors.start && !!touched.start}>
-                  <FormLabel>Start Time</FormLabel>
+                  <FormLabel className="label-wrapper">Start Time   <TimeIcon/></FormLabel>
                   <DatePicker
                     selected={values.start}
                     onChange={date => setFieldValue('start', date)}
@@ -153,9 +153,9 @@ export default function CalendarForm({
                   )}
                 </FormControl>
               </Flex>
-              <Flex flexBasis={'50%'}>
+              <Flex flexBasis={'50%'} >
                 <FormControl isInvalid={!!errors.end && !!touched.end}>
-                  <FormLabel>End Time</FormLabel>
+                  <FormLabel className="label-wrapper">End Time <TimeIcon/></FormLabel>
                   <DatePicker
                     selected={values.end}
                     onChange={date => setFieldValue('end', date)}
