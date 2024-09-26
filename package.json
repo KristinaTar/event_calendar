@@ -1,6 +1,7 @@
 {
   "name": "calendar",
   "version": "0.1.0",
+  "homepage": "https://github.com/KristinaTar/event_calendar.git",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -28,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-big-calendar": "^1.8.12"
+    "@types/react-big-calendar": "^1.8.12",
+    "gh-pages": "^6.1.1"
   }
 }
