@@ -1,0 +1,77 @@
+.rbc-header {
+  background: #dcd8d8;
+  color: #676565;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.rbc-row-content {
+  min-height: 110px !important;
+}
+
+.rbc-month-row {
+  overflow: visible !important;
+}
+
+.rbc-event {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  z-index: 2;
+  position: relative;
+}
+
+.rbc-event-content {
+  border-radius: 4px;
+}
+
+.rbc-background-event {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.rbc-event-label {
+  display: none !important;
+}
+
+.rbc-events-container {
+  width: 100% !important;
+}
+
+.rbc-timeslot-group {
+  min-height: 120px !important;
+}
+
+.rbc-day-slot .rbc-time-slot:after {
+  content: '';
+  width: 100%;
+  border-top: 1px solid #b9b9b9;
+  display: block;
+}
+
+.rbc-time-slot {
+  background: #f6f6f6;
+  color: #000000;
+  z-index: 1;
+}
+
+.rbc-addons-dnd-resizable {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-datepicker {
+  cursor: pointer;
+  width: 230px;
+}
+
+.react-datepicker-popper {
+  z-index: 5;
+}
+
+.custom-datepicker:hover {
+  color: #4396a9;
+}
